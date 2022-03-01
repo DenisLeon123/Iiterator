@@ -15,4 +15,9 @@ public class Support {
             print(animal.toString());
         }
     }
+
+    static public void notNull(Object obj){
+        if(obj == null)
+            throw new NullPointerException("It's exception");
+    }
 }

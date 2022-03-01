@@ -1,5 +1,6 @@
 package dleon.animal;
 
+import com.sun.istack.internal.NotNull;
 import dleon.cats.Cat;
 import dleon.cats.CatItem;
 import dleon.dogs.Dog;
@@ -12,7 +13,10 @@ public class AllAnimals {
     private CatItem catItem;
     private DogItem dogItem;
 
-    public AllAnimals(CatItem catItem, DogItem dogItem) {
+    public AllAnimals(@NotNull CatItem catItem, @NotNull DogItem dogItem) {
+        notNull(catItem);
+        notNull(dogItem);
+
         this.catItem = catItem;
         this.dogItem = dogItem;
 

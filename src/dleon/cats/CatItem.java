@@ -59,7 +59,5 @@ public class CatItem implements Animals<Cat> {
                 throw new ConcurrentModificationException();
             }
         }
-
     }
-
 }
